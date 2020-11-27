@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="button_1" mnemonicParsing="false" onMouseClicked="#onClickRight" style="-fx-background-color: blue;" text="1" textFill="RED" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+      <Button fx:id="button_2" mnemonicParsing="false" onMouseClicked="#onClickRight" text="2" textFill="#da20bb" GridPane.columnIndex="3" />
+      <Button fx:id="button_3" mnemonicParsing="false" onMouseClicked="#onClickRight" text="3" GridPane.columnIndex="2">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5047619047619047">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7368420958518982" green="0.054580897092819214" blue="0.054580897092819214" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="button_4" mnemonicParsing="false" onMouseClicked="#onClickRight" style="-fx-background-color: green;" text="4" GridPane.columnIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="button_5" mnemonicParsing="false" onMouseClicked="#onClickRight" prefHeight="30.0" prefWidth="30.0" text="5" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
